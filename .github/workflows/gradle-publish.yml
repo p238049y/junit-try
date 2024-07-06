@@ -24,9 +24,9 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
-
-    - name: Publish to GitHub Packages
-      run: ./gradlew publish
-      env:
-        USERNAME: ${{ github.actor }}
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# 現状不要なのでコメントアウト
+#    - name: Publish to GitHub Packages
+#      run: ./gradlew publish
+#      env:
+#        USERNAME: ${{ github.actor }}
+#        TOKEN: ${{ secrets.GITHUB_TOKEN }}
